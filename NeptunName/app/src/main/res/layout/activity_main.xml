@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="176dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="329dp"
+        android:text="Your result:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asciiButton" />
+
+    <Button
+        android:id="@+id/neptunButton"
+        android:layout_width="183dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:text="Get Neptun name"
+        app:layout_constraintBottom_toTopOf="@+id/asciiButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myEditText" />
+
+    <Button
+        android:id="@+id/asciiButton"
+        android:layout_width="183dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:text="Get ASCII sum"
+        app:layout_constraintBottom_toTopOf="@+id/myTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neptunButton" />
+
+    <EditText
+        android:id="@+id/myEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Input..."
+        app:layout_constraintBottom_toTopOf="@+id/neptunButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
